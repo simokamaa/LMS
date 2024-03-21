@@ -80,8 +80,6 @@ INSTALLED_APPS = [
     "apps.maps",
     "apps.transactions",
     "auth.apps.AuthConfig",
-    "apps.imagesync_main",
-    "apps.imageasync_api",
 ]
 
 MIDDLEWARE = [
