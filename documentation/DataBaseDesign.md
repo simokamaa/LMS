@@ -1,4 +1,4 @@
-# ImageSync Installition Guidelines on the docker
+# Installation Guidelines on the docker
 
 Running application locally using Docker
 

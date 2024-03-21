@@ -1,4 +1,4 @@
-# Melian Dialogue Research System Architecture for Image Sync
+# System Architecture for Image Sync
 
 
 1. Frontend Layer:

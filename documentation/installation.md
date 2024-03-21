@@ -1,4 +1,4 @@
-# ImageSync Installition guidelines to the server
+# Learning Management System Installation guidelines to the server
 
 ### Here's required technology and languages to get started:
 
