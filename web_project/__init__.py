@@ -29,3 +29,5 @@ class TemplateLayout:
         TemplateHelper.map_context(context)
 
         return context
+        """_summary_
+        """
