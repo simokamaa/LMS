@@ -1,4 +1,4 @@
-# System Architecture for Image Sync
+# System Architecture for learning management system
 
 
 1. Frontend Layer:

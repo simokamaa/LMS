@@ -37,7 +37,7 @@ TEMPLATE_CONFIG = {
 # Theme Variables
 # ? Personalize template by changing theme variables (For ex: Name, URL Version etc...)
 THEME_VARIABLES = {
-    "creator_name": "sigraelfa",
+    "creator_name": "sigraelfa solutions",
     "creator_url": "#",
     "template_name": "LMS",
     "template_suffix": "LMS",
