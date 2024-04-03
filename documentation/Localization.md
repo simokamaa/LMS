@@ -2,7 +2,7 @@
 
 Django's localization features provide a convenient way to retrieve strings in various languages, allowing you to easily support multiple languages within your application.
 
-## Built in localization for Image Sync
+## Built in localization for The Learning Management System
 
 To provide a convenient way to retrieve strings in various languages, allowing you to easily support multiple languages within your application.
 
@@ -140,11 +140,11 @@ lang: '{{LANGUAGE_CODE}}',
   ...
 });
 </script>
-theme-customizer
+customizer
 We have a javascript object of languages where you have to put your translation for customizer in template-customizer.js file.
 
 ### Use
-// Theme setting language
+//  setting language
 TemplateCustomizer.LANGUAGES = {
   en: {
     panel_header: 'TEMPLATE CUSTOMIZER',
