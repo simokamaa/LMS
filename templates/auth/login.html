@@ -3,7 +3,7 @@
 {% load static %}
 {% load i18n %}
 
-{% block title %}Login - Pages{% endblock %}
+{% block title %}Login{% endblock %}
 
 {% block vendor_css %}
 {{ block.super }}
@@ -35,7 +35,6 @@
     <div class="d-none d-lg-flex col-lg-7 p-0">
       <div class="auth-cover-bg auth-cover-bg-color d-flex justify-content-center align-items-center">
         <img src="{% static 'img/illustrations/girl-with-laptop' %}{{ COOKIES.style|default:style }}.png" alt="auth-login-cover" class="img-fluid my-5 auth-illustration" data-app-light-img="illustrations/girl-with-laptop.png" data-app-dark-img="illustrations/girl-with-laptop.png">
-
         <img src="{% static 'img/illustrations/bg-shape-image-' %}{{ COOKIES.style|default:style }}.png" alt="auth-login-cover" class="platform-bg" data-app-light-img="illustrations/bg-shape-image-light.png" data-app-dark-img="illustrations/bg-shape-image-dark.png">
       </div>
     </div>
@@ -53,7 +52,7 @@
           </a>
         </div>
         <!-- /Logo -->
-        <h3 class="mb-1">Welcome to {% get_theme_variables 'template_name' %}! 👋</h3>
+        <h3 class="mb-1">{% get_theme_variables 'template_name' %}</h3>
         <p class="mb-4">Please sign-in to your account and start the adventure</p>
         <div class="alert alert-primary small">
           <p class="text-caption mb-1"> Admin Email: <strong>admin@demo.com</strong> / Username: <strong>admin</strong>
