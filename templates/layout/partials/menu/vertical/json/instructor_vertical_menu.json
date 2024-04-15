@@ -367,37 +367,6 @@
       ]
     },
     {
-      "name": "Teacher",
-      "icon": "menu-icon tf-icons ti ti-file-dollar",
-      "slug": "app-teacher",
-      "badge": [
-        "danger",
-        "100"
-      ],
-      "submenu": [
-        {
-          "url": "app-teacher-list",
-          "name": "List",
-          "slug": "app-teacher-list"
-        },
-        {
-          "url": "app-invoice-preview",
-          "name": "Preview",
-          "slug": "app-invoice-preview"
-        },
-        {
-          "url": "app-invoice-edit",
-          "name": "Edit",
-          "slug": "app-invoice-edit"
-        },
-        {
-          "url": "app-invoice-add",
-          "name": "Add",
-          "slug": "app-invoice-add"
-        }
-      ]
-    },
-    {
       "name": "Users",
       "icon": "menu-icon tf-icons ti ti-users",
       "permission": "user.view_user",

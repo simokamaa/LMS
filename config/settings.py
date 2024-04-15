@@ -80,6 +80,7 @@ INSTALLED_APPS = [
     "apps.maps",
     "apps.transactions",
     "auth.apps.AuthConfig",
+    "apps.teacher",
 ]
 
 MIDDLEWARE = [

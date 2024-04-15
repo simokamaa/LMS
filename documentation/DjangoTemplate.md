@@ -1,5 +1,5 @@
 ### Django Template API
-Use Template API class written in Python to efficiently use Vuexy templates in Django projects of any complexity.
+Use Template API class written in Python to efficiently use lms templates in Django projects of any complexity.
 
 ### Template Helpers#
 init_context() - Init the Template Context using TEMPLATE_CONFIG.
