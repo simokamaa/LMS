@@ -15,21 +15,24 @@
           "slug": "dashboard-analytics"
         },
         {
-          "url": "dashboard-crm",
-          "name": "CRM",
-          "slug": "dashboard-crm"
+          "url": "dashboard-student",
+          "name": "Students",
+          "slug": "dashboard-student"
         },
         {
-          "url": "/app/ecommerce/dashboard",
-          "external": true,
-          "name": "eCommerce",
-          "slug": "app-ecommerce-dashboard"
+          "url": "dashboard-instructor",
+          "name": "Instructors",
+          "slug": "dashboard-instructor"
         },
         {
-          "url": "/app/logistics/dashboard",
-          "external": true,
-          "name": "Logistics",
-          "slug": "app-logistics-dashboard"
+          "url": "dashboard-general",
+          "name": "General",
+          "slug": "dashboard-general"
+        },
+        {
+          "url": "new_role_dashboard",
+          "name": "New Roles",
+          "slug": "new_role_dashboard"
         },
         {
           "url": "/app/academy/dashboard",
