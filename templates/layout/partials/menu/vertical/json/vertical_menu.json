@@ -147,6 +147,12 @@
       "slug": "app-email"
     },
     {
+      "url": "app-email",
+      "name": "whatsapp",
+      "icon": "menu-icon tf-icons ti ti-messages",
+      "slug": "app-whatsapp"
+    },
+    {
       "url": "app-chat",
       "name": "Chat",
       "icon": "menu-icon tf-icons ti ti-messages",
