@@ -54,7 +54,7 @@
         <!-- /Logo -->
         <h3 class="mb-1">{% get_theme_variables 'template_name' %}</h3>
         <p class="mb-4">Please sign-in to your account and start the adventure</p>
-        <div class="alert alert-primary small">
+        {% comment %} <div class="alert alert-primary small">
           <p class="text-caption mb-1"> Admin Email: <strong>admin@demo.com</strong> / Username: <strong>admin</strong>
             <span class="cursor-pointer" id="admin-user"><i class="ti ti-help ti-xs text-body mb-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" title="Admin User" data-bs-content="Can access User, Roles, and Permissions pages. Possesses permissions to View, Update, Delete, and Create transactions on the Transaction Page."></i></span>
           </p>
@@ -62,7 +62,7 @@
             <span class="cursor-pointer" id="client-user"><i class="ti ti-help ti-xs text-body mb-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" title="Client User" data-bs-content="Unable to access User, Roles, and  pages. Limited to viewing the Transaction page exclusively."></i></span>
           </p>
           <p class="text-caption mb-0">Password: <strong>Pwd_1234</strong></p>
-        </div>
+        </div> {% endcomment %}
         {% if messages %}
         {% for message in messages %}
         <div class="alert {% if message.tags == 'success' %}alert-success{% elif message.tags == 'error' %}alert-danger{% else %}alert-warning{% endif %}" role="alert">
