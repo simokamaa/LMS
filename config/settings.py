@@ -81,6 +81,7 @@ INSTALLED_APPS = [
     "apps.transactions",
     "auth.apps.AuthConfig",
     "apps.teacher",
+    "apps.Lms_App",
 ]
 
 MIDDLEWARE = [
