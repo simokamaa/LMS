@@ -31,6 +31,9 @@ urlpatterns = [
     # FrontPages urls
     path("", include("apps.front_pages.urls")),
 
+    # lms app module urls
+    path("", include("apps.Lms_App.urls")),
+
     # FrontPages urls
     path("", include("apps.mail.urls")),
 
