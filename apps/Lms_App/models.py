@@ -10,12 +10,13 @@ class MenuItem(models.Model):
     url = models.CharField(max_length=200)
     # Add other fields as needed
 
-class Menu(models.Model):
+class SubMenu(models.Model):
     name = models.CharField(max_length=100)
+    url = models.CharField(max_length=255, null=True, blank=True)
     items = models.ManyToManyField(MenuItem)
 
 class App(models.Model):
     name = models.CharField(max_length=100)
     creator = models.ForeignKey(User, on_delete=models.CASCADE)
     users = models.ManyToManyField(User, related_name='apps')
-    menu = models.ForeignKey(Menu, on_delete=models.SET_NULL, null=True)
+    menu = models.ForeignKey(MenuItem, on_delete=models.SET_NULL, null=True)
