@@ -2,12 +2,23 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class MenuItem(models.Model):
     name = models.CharField(max_length=100)
-    icon = models.CharField(max_length=255, null=True, blank=True)
-    slug = models.CharField(max_length=255, blank=True, null=True)
-    badge = models.CharField(max_length=255, blank=True, null=True)
-    url = models.CharField(max_length=200)
+    icon = models.CharField(max_length=100)
+    slug = models.CharField(max_length=100)
+    badge_color = models.CharField(max_length=20, null=True, blank=True)
+    badge_count = models.IntegerField(null=True, blank=True)
+    url = models.CharField(max_length=100, null=True, blank=True)
+    external = models.BooleanField(default=False)
+    permission = models.CharField(max_length=100, null=True, blank=True)
+    target = models.CharField(max_length=20, null=True, blank=True)
+
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, related_name='children', null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
     # Add other fields as needed
 
 class SubMenu(models.Model):
