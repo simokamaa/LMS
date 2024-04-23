@@ -23,3 +23,12 @@ def group_required(group_names):
             return view_func(request, *args, **kwargs)
         return wrapped_view
     return decorator
+
+# views.py
+from django.shortcuts import render
+from .decorators import group_required
+
+@group_required(['Admin', 'Editor'])
+def write_code(request):
+    # Your view logic for writing code goes here
+    return render(request, 'write_code.html')
