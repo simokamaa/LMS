@@ -1,6 +1,6 @@
 # models.py
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User,Group
 
 
 class MenuItem(models.Model):
@@ -29,5 +29,5 @@ class SubMenu(models.Model):
 class App(models.Model):
     name = models.CharField(max_length=100)
     creator = models.ForeignKey(User, on_delete=models.CASCADE)
-    users = models.ManyToManyField(User, related_name='apps')
+    users = models.ManyToManyField(Group, related_name='apps')
     menu = models.ForeignKey(MenuItem, on_delete=models.SET_NULL, null=True)

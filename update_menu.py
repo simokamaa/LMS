@@ -1,4 +1,4 @@
-import json
+import templates.layout.partials.menu.vertical.json.vertical_menu.json as json
 from apps.Lms_App.models import MenuItem
 
 def update_menu_items(menu_items, parent=None):

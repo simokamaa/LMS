@@ -1,4 +1,7 @@
 import json
+from django.conf import settings 
+
+menu_file_path =  settings.BASE_DIR / "templates" / "layout" / "partials" / "menu" / "vertical" / "json" / "vertical_menu.json"
 
 from apps.Lms_App.models import MenuItem
 
