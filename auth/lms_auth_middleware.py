@@ -11,14 +11,11 @@ class StudentRedirectMiddleware:
         # Check if the user is authenticated and in the "student" group
         if request.user.is_authenticated and request.user.groups.filter(name='Student').exists():
             # Redirect to the student dashboard
-            if not request.path.startswith(reverse('dashboard-student')):
-                return HttpResponseRedirect(reverse('dashboard-student'))
+            if not request.path.startswith(reverse('app-academy-dashboard')):
+                return HttpResponseRedirect(reverse('app-academy-dashboard'))
 
         return response
 
-
-from django.http import HttpResponseRedirect
-from django.urls import reverse
 
 class RoleRedirectMiddleware:
     def __init__(self, get_response):
@@ -32,8 +29,8 @@ class RoleRedirectMiddleware:
             # Check for additional roles/groups
             if request.user.groups.filter(name='Student').exists():
                 # Redirect to the student dashboard
-                if not request.path.startswith(reverse('dashboard-student')):
-                    return HttpResponseRedirect(reverse('dashboard-student'))
+                if not request.path.startswith(reverse('app-academy-dashboard')):
+                    return HttpResponseRedirect(reverse('app-academy-dashboard'))
             elif request.user.groups.filter(name='Instructor').exists():
                 # Redirect to the instructor dashboard
                 if not request.path.startswith(reverse('dashboard-instructor')):
@@ -42,6 +39,5 @@ class RoleRedirectMiddleware:
                 # Redirect to the superuser dashboard
                 if not request.path.startswith(reverse('dashboard-superuser')):
                     return HttpResponseRedirect(reverse('dashboard-superuser'))
-            # Add more elif blocks for other roles as needed
 
         return response
