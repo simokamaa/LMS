@@ -35,9 +35,9 @@ class RoleRedirectMiddleware:
                 # Redirect to the instructor dashboard
                 if not request.path.startswith(reverse('dashboard-instructor')):
                     return HttpResponseRedirect(reverse('dashboard-instructor'))
-            elif request.user.is_superuser:
-                # Redirect to the superuser dashboard
-                if not request.path.startswith(reverse('dashboard-superuser')):
-                    return HttpResponseRedirect(reverse('dashboard-superuser'))
+            elif request.user.groups.filter(name='new_role'):
+                if not request.path.startswith(reverse("new_role_dashboard")):
+                    return HttpResponseRedirect(reverse("new_role_dashboard"))
+                
 
         return response
