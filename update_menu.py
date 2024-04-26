@@ -1,7 +1,8 @@
-from django.conf import settings
 import json
 import os
 import django
+
+from django.conf import settings
 
 # Manually configure Django settings
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
@@ -47,7 +48,7 @@ def update_menu_items(menu_items, parent=None):
             update_menu_items(item['submenu'], parent=menu_item)
 
 # Load the updated JSON file
-with open('menu_data.json', 'r') as file:
+with open(menu_file_path, 'r') as file:
     updated_menu_data = json.load(file)
 
 # Update the menu items
