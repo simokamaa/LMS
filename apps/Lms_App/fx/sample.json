@@ -17,10 +17,6 @@
           "slug": "layouts"
       }
   },
-  // Add more menu items as needed
-]
-
-[
   {
       "model": "yourapp.submenuitem",
       "pk": 1,
@@ -40,6 +36,5 @@
           "url": "dashboard-student",
           "slug": "dashboard-student"
       }
-  },
-  // Add more submenu items as needed
+  }
 ]
