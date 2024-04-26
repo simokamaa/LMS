@@ -1,0 +1,45 @@
+[
+  {
+      "model": "yourapp.menuitem",
+      "pk": 1,
+      "fields": {
+          "name": "Dashboards",
+          "icon": "menu-icon tf-icons ti ti-smart-home",
+          "slug": "dashboard"
+      }
+  },
+  {
+      "model": "yourapp.menuitem",
+      "pk": 2,
+      "fields": {
+          "name": "Layouts",
+          "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+          "slug": "layouts"
+      }
+  },
+  // Add more menu items as needed
+]
+
+[
+  {
+      "model": "yourapp.submenuitem",
+      "pk": 1,
+      "fields": {
+          "menu_item": 1,
+          "name": "Analytics",
+          "url": "index",
+          "slug": "dashboard-analytics"
+      }
+  },
+  {
+      "model": "yourapp.submenuitem",
+      "pk": 2,
+      "fields": {
+          "menu_item": 1,
+          "name": "Students",
+          "url": "dashboard-student",
+          "slug": "dashboard-student"
+      }
+  },
+  // Add more submenu items as needed
+]

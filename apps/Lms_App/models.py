@@ -21,10 +21,16 @@ class MenuItem(models.Model):
 
     # Add other fields as needed
 
-class SubMenu(models.Model):
+class SubMenuItem(models.Model):
+    menu_item = models.ForeignKey(MenuItem, related_name='submenu', on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    url = models.CharField(max_length=255, null=True, blank=True)
-    items = models.ManyToManyField(MenuItem)
+    url = models.CharField(max_length=100)
+    slug = models.CharField(max_length=100)
+    external = models.BooleanField(default=False)
+    target = models.CharField(max_length=100, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
 
 class App(models.Model):
     name = models.CharField(max_length=100)
