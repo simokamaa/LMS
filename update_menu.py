@@ -1,4 +1,14 @@
-import templates.layout.partials.menu.vertical.json.vertical_menu.json as json
+from django.conf import settings
+import json
+import os
+import django
+
+# Manually configure Django settings
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+django.setup()
+
+menu_file_path =  settings.BASE_DIR / "templates" / "layout" / "partials" / "menu" / "vertical" / "json" / "vertical_menu.json"
+
 from apps.Lms_App.models import MenuItem
 
 def update_menu_items(menu_items, parent=None):
