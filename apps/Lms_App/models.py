@@ -28,6 +28,8 @@ class SubMenuItem(models.Model):
     slug = models.CharField(max_length=100)
     external = models.BooleanField(default=False)
     target = models.CharField(max_length=100, blank=True, null=True)
+    badge_color = models.CharField(max_length=20, null=True, blank=True)
+    badge_count = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.name
