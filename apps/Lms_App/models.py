@@ -5,8 +5,8 @@ from django.contrib.auth.models import User,Group
 
 class MenuItem(models.Model):
     name = models.CharField(max_length=100)
-    icon = models.CharField(max_length=100)
-    slug = models.CharField(max_length=100)
+    icon = models.CharField(max_length=100, blank=True, null=True)
+    slug = models.CharField(max_length=100, blank=True, null=True)
     badge_color = models.CharField(max_length=20, null=True, blank=True)
     badge_count = models.IntegerField(null=True, blank=True)
     url = models.CharField(max_length=100, null=True, blank=True)

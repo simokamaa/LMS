@@ -38,3 +38,53 @@
       }
   }
 ]
+
+
+
+
+[
+  {
+      "model": "Lms_App.menuitem",
+      "pk": 1,
+      "fields": {
+          "name": "Dashboards",
+          "icon": "menu-icon tf-icons ti ti-smart-home",
+          "slug": "dashboard"
+      }
+  },
+  {
+      "model": "Lms_App.menuitem",
+      "pk": 2,
+      "fields": {
+          "name": "Layouts",
+          "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+          "slug": "layouts"
+      }
+  },
+  // Add more menu items as needed
+]
+
+
+[
+  {
+      "model": "Lms_App.submenuitem",
+      "pk": 1,
+      "fields": {
+          "menu": 1,
+          "name": "Analytics",
+          "url": "index",
+          "slug": "dashboard-analytics"
+      }
+  },
+  {
+      "model": "Lms_App.submenuitem",
+      "pk": 2,
+      "fields": {
+          "menu": 1,
+          "name": "Students",
+          "url": "dashboard-student",
+          "slug": "dashboard-student"
+      }
+  },
+  // Add more submenu items as needed
+]
