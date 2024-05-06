@@ -10,66 +10,8 @@
         "badge": [
           "primary",
           "5"
-        ],
-        "submenu": [
-         {
-          "model" : "Lms_App.SubMenuItem",
-          "pk" : 2,
-          "fields" :  {
-            "url": "index",
-            "name": "Analytics",
-            "slug": "dashboard-analytics"
-          }
-         },
-{
-  "model" : "Lms_App.SubMenuItem",
-  "pk" : 3,
-  "fields" :           {
-    "url": "dashboard-student",
-    "name": "Students",
-    "slug": "dashboard-student"
-  }
-},
-{
-  "model" : "Lms_App.SubMenuItem",
-  "pk": 4,
-  "fields" :           {
-    "url": "dashboard-instructor",
-    "name": "Instructors",
-    "slug": "dashboard-instructor"
-  }
-},
-{
-  "model" : "Lms_App.SubMenuItem",
-  "pk":5,
-  "fields":          {
-    "url": "dashboard-general",
-    "name": "General",
-    "slug": "dashboard-general"
-  }
-},
-{
-  "model" : "Lms_App.SubMenuItem",
-  "pk": 6,
-  "fields" :           {
-    "url": "new_role_dashboard",
-    "name": "New Roles",
-    "slug": "new_role_dashboard"
-  }
-},
-          {
-            "model" : "Lms_App.SubMenuItem",
-            "pk" : 7,
-            "fields" : {
-              "url": "/app/academy/dashboard",
-              "external": true,
-              "name": "Academy",
-              "slug": "app-academy-dashboard"
-            }
-          }
         ]
       }
-
     }
   ]
 }

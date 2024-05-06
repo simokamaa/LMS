@@ -1,0 +1,50 @@
+// menu_fixture.json
+[
+  {
+      "model": "yourapp.menu",
+      "pk": 1,
+      "fields": {
+          "name": "Dashboards",
+          "icon": "menu-icon tf-icons ti ti-smart-home",
+          "slug": "dashboard",
+          "badge_color": "primary",
+          "badge_count": 5
+      }
+  },
+  {
+      "model": "yourapp.menu",
+      "pk": 2,
+      "fields": {
+          "name": "Layouts",
+          "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+          "slug": "layouts",
+          "badge_color": "",
+          "badge_count": 0
+      }
+  },
+  {
+      "model": "yourapp.submenu",
+      "pk": 1,
+      "fields": {
+          "menu": 1,  // Foreign key reference to Menu with pk 1
+          "url": "index",
+          "name": "Analytics",
+          "slug": "dashboard-analytics",
+          "external": false,
+          "target": ""
+      }
+  },
+  {
+      "model": "yourapp.submenu",
+      "pk": 2,
+      "fields": {
+          "menu": 1,  // Foreign key reference to Menu with pk 1
+          "url": "dashboard-student",
+          "name": "Students",
+          "slug": "dashboard-student",
+          "external": false,
+          "target": ""
+      }
+  },
+  // Submenus for other Menu items
+]

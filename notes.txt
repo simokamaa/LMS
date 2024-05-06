@@ -1,0 +1,38 @@
+# Role Based Access Control
+- Decorators
+- MiddleWare
+- Permissions
+- Fixtures
+- Commands
+
+// objectives of Permissions
+- developing dynamic web interface from module apps and delegating to respective group
+- in delegation process it will be processed under decorator and MiddleWare
+- permissions - decorator & MiddleWare
+
+
+
+//decorator.py
+def decoratorFunc():
+    def wrappper_func():
+      def view_funct():
+         groups = Group.objects.all().name[0]
+          pass
+
+
+@decorator(allowed_roles=[])
+class readview():
+  permissions = models.permissions()
+     pass
+
+
+class createview():
+      pass
+
+class updateview():
+      pass
+
+class deleteview():
+      pass
+
+- CRUD Operations
