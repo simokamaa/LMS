@@ -21,7 +21,7 @@ class MenuItem(models.Model):
     # Add other fields as needed
 
 class SubMenuItem(models.Model):
-    menu_item = models.ForeignKey(MenuItem, related_name='submenu', on_delete=models.CASCADE)
+    menu = models.ForeignKey(MenuItem, related_name='submenu', on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     url = models.CharField(max_length=100)
     slug = models.CharField(max_length=100)
