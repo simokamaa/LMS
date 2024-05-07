@@ -39,3 +39,4 @@ class App(models.Model):
     users = models.ManyToManyField(Group, related_name='apps')
     menu = models.ForeignKey(MenuItem, on_delete=models.SET_NULL, null=True,blank=True)
     SubMenuItem = models.ForeignKey(SubMenuItem, on_delete=models.CASCADE,blank=True, null=True)
+    date = models.DateTimeField(auto_now_add=True,null=True,blank=True)
