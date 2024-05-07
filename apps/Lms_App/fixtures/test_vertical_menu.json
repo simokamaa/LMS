@@ -1,17 +1,48 @@
-{
-  "menu": [
-    {
-      "model" : "Lms_App.MenuItem",
-      "pk" : 1,
+[
+  {
+      "model": "Lms_App.MenuItem",
+      "pk": 1,
       "fields": {
-        "name": "Dashboards",
-        "icon": "menu-icon tf-icons ti ti-smart-home",
-        "slug": "dashboard",
-        "badge": [
-          "primary",
-          "5"
-        ]
+          "name": "Dashboards",
+          "icon": "menu-icon tf-icons ti ti-smart-home",
+          "slug": "dashboard",
+          "badge_color": "primary",
+          "badge_count": 5
       }
-    }
-  ]
-}
+  },
+  {
+      "model": "Lms_App.MenuItem",
+      "pk": 2,
+      "fields": {
+          "name": "Layouts",
+          "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+          "slug": "layouts",
+          "badge_color": "",
+          "badge_count": 0
+      }
+  },
+  {
+      "model": "Lms_App.SubMenuItem",
+      "pk": 1,
+      "fields": {
+          "menu": 1,
+          "url": "index",
+          "name": "Analytics",
+          "slug": "dashboard-analytics",
+          "external": false,
+          "target": ""
+      }
+  },
+  {
+      "model": "Lms_App.SubMenuItem",
+      "pk": 2,
+      "fields": {
+          "menu": 1,
+          "url": "dashboard-student",
+          "name": "Students",
+          "slug": "dashboard-student",
+          "external": false,
+          "target": ""
+      }
+  }
+]
