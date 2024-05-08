@@ -82,6 +82,7 @@ INSTALLED_APPS = [
     "auth.apps.AuthConfig",
     "apps.teacher",
     "apps.Lms_App",
+    "apps.system_config",
 ]
 
 MIDDLEWARE = [
