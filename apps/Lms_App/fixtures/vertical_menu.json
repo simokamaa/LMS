@@ -1120,6 +1120,28 @@
       "menu_header": "Misc"
     },
     {
+      "name": "Academy",
+      "icon": "menu-icon tf-icons ti ti-book",
+      "slug": "app-academy",
+      "submenu": [
+        {
+          "url": "app-academy-dashboard",
+          "name": "Dashboard",
+          "slug": "app-academy-dashboard"
+        },
+        {
+          "url": "app-academy-course",
+          "name": "My Course",
+          "slug": "app-academy-course"
+        },
+        {
+          "url": "app-academy-course-details",
+          "name": "Course Details",
+          "slug": "app-academy-course-details"
+        }
+      ]
+    },
+    {
       "url": "https://pixinvent.ticksy.com/",
       "external": true,
       "icon": "menu-icon tf-icons ti ti-lifebuoy",

@@ -1120,6 +1120,46 @@
       "menu_header": "Misc"
     },
     {
+      "name": "System Settings",
+      "icon": "menu-icon tf-icons ti ti-layout-navbar",
+      "slug": "form-layouts",
+      "submenu": [
+        {
+          "url": "form-layouts-vertical",
+          "name": "Vertical Form",
+          "slug": "form-layouts-vertical"
+        },
+        {
+          "name": "Roles & Permissions",
+          "icon": "menu-icon tf-icons ti ti-settings",
+          "permission": "permission.view_permission",
+          "slug": "app-access",
+          "submenu": [
+            {
+              "url": "app-access-roles",
+              "name": "Roles",
+              "slug": "app-access-roles"
+            },
+            {
+              "url": "app-access-permission",
+              "name": "Permissions",
+              "slug": "app-access-permission"
+            }
+          ]
+        },
+        {
+          "url": "form-layouts-horizontal",
+          "name": "Horizontal Form",
+          "slug": "form-layouts-horizontal"
+        },
+        {
+          "url": "form-layouts-sticky",
+          "name": "Sticky Actions",
+          "slug": "form-layouts-sticky"
+        }
+      ]
+    },
+    {
       "url": "https://pixinvent.ticksy.com/",
       "external": true,
       "icon": "menu-icon tf-icons ti ti-lifebuoy",
