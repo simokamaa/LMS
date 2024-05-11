@@ -44,5 +44,14 @@
           "external": false,
           "target": ""
       }
+  },
+  {
+    "model" : "Lms_App.MenuItem",
+    "pk" : 3,
+    "fields" : {
+      "name": "System Settings",
+      "icon": "menu-icon tf-icons ti ti-layout-navbar",
+      "slug": "form-layouts"
+    }
   }
 ]
