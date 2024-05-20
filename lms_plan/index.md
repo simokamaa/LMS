@@ -7,7 +7,7 @@ Dynamic modules delegation by super users
 
 1. Core Learning Modules:
    - Content Management: Creation, organization, and delivery of course materials.
-   - Assignments: Creation, submission, and grading of assignments.
+    - Assignments: Creation, submission, and grading of assignments.
    - Quizzes and Tests: Creation, administration, and grading of quizzes, tests, and assessments.
    - Gradebook: Management of student grades and performance tracking.
    - Discussions: Discussion forums for asynchronous communication.
@@ -75,5 +75,3 @@ Dynamic modules delegation by super users
     - Knowledge Base: Repository of support articles and FAQs.
     - Online Training Resources: Training materials for administrators, instructors, and students.
     - Community Forums: Online forums for user discussions and support.
-
-
