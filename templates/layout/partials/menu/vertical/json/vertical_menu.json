@@ -42,47 +42,6 @@
         }
       ]
     },
-    {
-      "name": "Layouts",
-      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
-      "slug": "layouts",
-      "submenu": [
-        {
-          "url": "layouts-collapsed-menu",
-          "name": "Collapsed menu",
-          "slug": "layouts-collapsed-menu"
-        },
-        {
-          "url": "layouts-content-navbar",
-          "name": "Content navbar",
-          "slug": "layouts-content-navbar"
-        },
-        {
-          "url": "layouts-content-nav-sidebar",
-          "name": "Content nav + Sidebar",
-          "slug": "layouts-content-nav-sidebar"
-        },
-        {
-          "url": "layouts-horizontal",
-          "name": "Horizontal",
-          "slug": "layouts-horizontal",
-          "target": "_blank"
-        },
-        {
-          "url": "layouts-without-menu",
-          "name": "Without menu",
-          "slug": "layouts-without-menu"
-        },
-        {
-          "url": "layouts-without-navbar",
-          "name": "Without navbar",
-          "slug": "layouts-without-navbar"
-        },
-        {
-          "url": "layouts-fluid",
-          "name": "Fluid",
-          "slug": "layouts-fluid"
-        },
         {
           "url": "layouts-container",
           "name": "Container",
@@ -173,37 +132,6 @@
       "icon": "menu-icon tf-icons ti ti-layout-kanban",
       "slug": "app-kanban"
     },
-    {
-      "name": "eCommerce",
-      "icon": "menu-icon tf-icons ti ti-shopping-cart",
-      "slug": "app-ecommerce",
-      "submenu": [
-        {
-          "url": "app-ecommerce-dashboard",
-          "name": "Dashboard",
-          "slug": "app-ecommerce-dashboard"
-        },
-        {
-          "name": "Products",
-          "slug": "app-ecommerce-product",
-          "submenu": [
-            {
-              "url": "app-ecommerce-product-list",
-              "name": "Product List",
-              "slug": "app-ecommerce-product-list"
-            },
-            {
-              "url": "app-ecommerce-product-add",
-              "name": "Add Product",
-              "slug": "app-ecommerce-product-add"
-            },
-            {
-              "url": "app-ecommerce-product-category-list",
-              "name": "Category List",
-              "slug": "app-ecommerce-product-category-list"
-            }
-          ]
-        },
         {
           "name": "Order",
           "slug": "app-ecommerce-order",
@@ -257,54 +185,6 @@
             }
           ]
         },
-        {
-          "url": "app-ecommerce-manage-reviews",
-          "name": "Manage Reviews",
-          "slug": "app-ecommerce-manage-reviews"
-        },
-        {
-          "url": "app-ecommerce-referrals",
-          "name": "Referrals",
-          "slug": "app-ecommerce-referrals"
-        },
-        {
-          "name": "Settings",
-          "slug": "app-ecommerce-settings",
-          "submenu": [
-            {
-              "url": "app-ecommerce-settings-detail",
-              "name": "Store details",
-              "slug": "app-ecommerce-settings-detail"
-            },
-            {
-              "url": "app-ecommerce-settings-payments",
-              "name": "Payments",
-              "slug": "app-ecommerce-settings-payments"
-            },
-            {
-              "url": "app-ecommerce-settings-checkout",
-              "name": "Checkout",
-              "slug": "app-ecommerce-settings-checkout"
-            },
-            {
-              "url": "app-ecommerce-settings-shipping",
-              "name": "Shipping & Delivery",
-              "slug": "app-ecommerce-settings-shipping"
-            },
-            {
-              "url": "app-ecommerce-settings-locations",
-              "name": "Locations",
-              "slug": "app-ecommerce-settings-locations"
-            },
-            {
-              "url": "app-ecommerce-settings-notifications",
-              "name": "Notifications",
-              "slug": "app-ecommerce-settings-notifications"
-            }
-          ]
-        }
-      ]
-    },
     {
       "name": "Teacher",
       "icon": "menu-icon tf-icons ti ti-file-dollar",
