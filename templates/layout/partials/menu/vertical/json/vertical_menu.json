@@ -42,19 +42,7 @@
         }
       ]
     },
-        {
-          "url": "layouts-container",
-          "name": "Container",
-          "slug": "layouts-container"
-        },
-        {
-          "url": "layouts-blank",
-          "name": "Blank",
-          "slug": "layouts-blank",
-          "target": "_blank"
-        }
-      ]
-    },
+
     {
       "name": "Front Pages",
       "icon": "menu-icon tf-icons ti ti-files",
