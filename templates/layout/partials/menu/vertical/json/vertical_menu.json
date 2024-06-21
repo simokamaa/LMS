@@ -155,16 +155,6 @@
                   "slug": "app-ecommerce-customer-details-overview"
                 },
                 {
-                  "url": "app-ecommerce-customer-details-security",
-                  "name": "Security",
-                  "slug": "app-ecommerce-customer-details-security"
-                },
-                {
-                  "url": "app-ecommerce-customer-details-billing",
-                  "name": "Address & Billing",
-                  "slug": "app-ecommerce-customer-details-billing"
-                },
-                {
                   "url": "app-ecommerce-customer-details-notifications",
                   "name": "Notifications",
                   "slug": "app-ecommerce-customer-details-notifications"
